@@ -6,5 +6,8 @@ function testFunc() {
 
 function superbowlWin(arr) {
   let win = arr.find( record => record.result === 'W' )
-  return win.year;
+  if (win) {
+    return win.year;
+  }
+  
 }
